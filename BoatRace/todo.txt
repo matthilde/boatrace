@@ -1,0 +1,19 @@
+LISTE A FAIRE
+
+ [ ] Base fonctionelle
+   [x] Systeme segment/checkpoint
+   [x] Verification joueur dans bateau
+   [x] Temps
+   [ ] Configuration plugin
+ [ ] Leaderboard
+   [ ] BdD SQL (prevoir pour le mode kiosque quand meme)
+   [ ] Enregistrement temps
+   [ ] Affichage leaderboard
+ [ ] Mode Kiosque
+  ---
+ [ ] Multi-carte
+ [ ] Multi-joueur
+
+--------
+
+TODO: Debug le plugin pour voir pk il marche pas ptn

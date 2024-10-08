@@ -1,0 +1,52 @@
+#
+#  _                 _
+# | |__   ___   __ _| |_ _ __ __ _  ___ ___
+# | '_ \ / _ \ / _` | __| '__/ _` |/ __/ _ \
+# | |_) | (_) | (_| | |_| | | (_| | (_|  __/
+# |_.__/ \___/ \__,_|\__|_|  \__,_|\___\___|
+#
+# Exemple de configuration
+#
+
+#### BASE DE DONNEES ####
+# Le plugin depend de MySQL pour la leaderboard. Les identifiants sont a renseigner ici.
+database:
+  host: HOST
+  port: 3306
+  username: USERNAME
+  password: PASSWORD
+  database: DATABASE
+
+#### PARAMETRES GLOBAUX ####
+global:
+  # Combien de temps le joueur est accorde pour revenir dans son beateau?
+  timeout: 7
+
+#### COURSES ####
+# Cette section contient les informations sur les courses proposees sur le serveur.
+# Pour le moment, on peut y creer seulement une course. La possibilite de creer plusieurs courses sera implemente
+# plus tard.
+races:
+  # Course par defaut.
+  default:
+    # Nom de la course
+    name: "Hub"
+    # Zones WorldGuard des segments. La ligne de depart est a mettre au debut obligatoirement.
+    segments:
+      - finishline
+      - boatsegment1
+      - boatsegment2
+      - boatsegment3
+    # Zones WorldGuard de checkpoint. Ligne de depart a mettre egalement
+    checkpoints:
+      - finishline
+      - boatcheckpoint1
+      - boatcheckpoint2
+      - boatcheckpoint3
+      - boatcheckpoint4
+    # Point de respawn en cas de disqualification
+    respawn: [ -723, 122, 1330 ]
+    # Position hologramme leaderboard (null si aucun hologramme)
+    hologram: hubleaderboard
+    # Zone d'entree a la course (give un bateau)
+    entryPoint: entreBoat

@@ -1,0 +1,21 @@
+name: BoatRace
+version: '1.0-SNAPSHOT'
+main: de.matthil.boatRace.BoatRace
+api-version: '1.20'
+depend:
+  - WorldGuard
+  - MDEUtilitiesLib
+  - DecentHolograms
+
+commands:
+  reload:
+    description: Reload la configuration du plugin
+    usage: /<command>
+    permission: boatrace.admin
+  lb:
+    description: Affiche la leaderboard
+    usage: /<command>
+    permission: boatrace.admin
+  br:
+    description: BoatRace commands
+    usage: /<command> <restart|leave>
